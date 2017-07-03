@@ -1,0 +1,54 @@
+.error {
+    color: red;
+}
+
+body {
+    margin: 10em;
+    font-family: "Arial", "Verdana";
+    color: #444444;
+}
+
+table {
+    padding-bottom: 3em;
+    margin: auto;
+    color: navy;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+sub {
+    color: #444444;
+}
+
+h1 {
+    margin-left: 3.8em;
+    padding-bottom: .5 em;
+    font-size: 3em;
+}
+
+.submit {
+    margin-top: 3em;
+}
+
+.button {
+    background-color: white;
+    font-family: "Arial", "Verdana";
+    padding: 1em;
+    margin: auto;
+    margin-left: 18em;
+}
+
+.main {
+    width: 35em;
+    background-color: lightgray;
+    padding-bottom: 3em;
+    padding-top: 2em;
+    margin-left: 10em;
+    border: 2px solid black;
+}
+
+input {
+    padding: 0.5em;
+}

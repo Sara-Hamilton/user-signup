@@ -2,41 +2,39 @@
 
 <head>
     <title>Signup</title>
-    <style>
-        .error {
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/static/styles/main.css" />
 </head>
 
 <body>
-    <h1>Sign Up</h1>
-    <form action="/validate" method="post">
-        <table>
-            <tr>
-                <td align="right">Username: </br><sub>(3-20 characters no spaces)</sub>
-                </td>
-                <td align="left"><input type="text" name="name" value="{{name}}" /></td>
-                <td align="left" class="error">{{username_error}}</td>
-            </tr>
-            <tr>
-                <td align="right">Password:</br><sub>(3-20 characters no spaces)</sub></td>
-                <td align="left"><input type="password" name="password" value="{{password}}" /></td>
-                <td align="left" class="error">{{password_error}}</td>
-            </tr>
-            <tr>
-                <td align="right">Verify Password:</br><sub>(retype your password)</sub></td>
-                <td align="left"><input type="password" name="verify" value="{{verify}}" /></td>
-                <td align="left" class="error">{{verify_error}}</td>
-            </tr>
-            <tr>
-                <td align="right">Email:</br><sub>(optional)</sub></td>
-                <td align="left"><input type="text" name="email" value="{{email}}" /></td>
-                <td align="left" class="error">{{email_error}}</td>
-            </tr>
-        </table>
-        <input type="submit" name="submit" value="Submit Query">
-    </form>
+    <div class="main">
+        <h1>Sign Up</h1>
+        <form action="/validate" method="post">
+            <table>
+                <tr>
+                    <td align="right" class="bold">Username: </br><sub>(3-20 characters no spaces)</sub>
+                    </td>
+                    <td align="left"><input type="text" name="name" value="{{name}}" /></td>
+                    <td align="left" class="error">{{username_error}}</td>
+                </tr>
+                <tr>
+                    <td align="right" class="bold">Password:</br><sub>(3-20 characters no spaces)</sub></td>
+                    <td align="left"><input type="password" name="password" value="{{password}}" /></td>
+                    <td align="left" class="error">{{password_error}}</td>
+                </tr>
+                <tr>
+                    <td align="right" class="bold">Verify Password:</br><sub>(retype your password)</sub></td>
+                    <td align="left"><input type="password" name="verify" value="{{verify}}" /></td>
+                    <td align="left" class="error">{{verify_error}}</td>
+                </tr>
+                <tr>
+                    <td align="right" class="bold">Email:</br><sub>(optional)</sub></td>
+                    <td align="left"><input type="text" name="email" value="{{email}}" /></td>
+                    <td align="left" class="error">{{email_error}}</td>
+                </tr>
+            </table>
+            <input class="submit button" type="submit" name="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 </html>

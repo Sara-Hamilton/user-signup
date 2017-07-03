@@ -23,8 +23,10 @@ def validate_password(password):
         password_error = "No password entered."
     elif len(password) < 3 or len(password) > 20:
         password_error = "Password must be between 3 and 20 characters long."
+        password = ""
     elif " " in password:
         password_error = "There can be no spaces in the password."
+        password = ""
     return password, password_error
 
 def validate_verify(verify):
@@ -32,8 +34,9 @@ def validate_verify(verify):
     password = request.form['password']
     if password != "":
         if verify == "" or verify != password:
-            verify_error = "Passwords do not match. Reenter passwords."
+            verify_error = "Passwords do not match. Reenter password."
             verify = ""
+            password = ""
     return verify, verify_error
 
 def validate_email(email):
@@ -66,8 +69,8 @@ def validate():
     if not username_error and not password_error and not verify_error and not email_error:
         return render_template('welcome.html', name = name)
     else:
-        return render_template('index.html', name = name, username_error = username_error,
-        password_error = password_error, verify_error = verify_error, email = email, email_error = email_error)
+        return render_template('index.html', name = name, username_error = username_error, password_error = password_error, 
+        verify_error = verify_error, email = email, email_error = email_error)
         
 
 @app.route("/welcome", methods=['POST'])
