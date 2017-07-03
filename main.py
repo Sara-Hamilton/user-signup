@@ -53,6 +53,7 @@ def validate_email(email):
     return email, email_error
 
 
+
 @app.route("/")
 def index():
     return render_template('index.html')
