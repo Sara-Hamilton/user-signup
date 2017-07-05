@@ -10,7 +10,7 @@ body {
 
 table {
     padding-bottom: 3em;
-    margin: auto;
+    margin-left: 4em;
     color: navy;
 }
 
@@ -41,12 +41,9 @@ h1 {
 }
 
 .main {
-    width: 35em;
-    background-color: lightgray;
+    width: 55em;
+    background-color: none;
     padding-bottom: 3em;
-    padding-top: 2em;
-    margin-left: 10em;
-    border: 2px solid black;
 }
 
 input {
